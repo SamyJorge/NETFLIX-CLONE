@@ -1,4 +1,4 @@
-/*DECLARANDO VARIAVEIS DENTRO DO CSS*/
+/*DECLARANDO VARIAVEIS NO CSS*/
 :root{
     --vermelho:#e50914;
     --preto:#141414;
@@ -32,12 +32,15 @@ header .logo{
     font-size: 40px;
 }
 
-
 /*Tratando os links da nav bar*/
+nav{
+    margin-right: 10px;
+}
+
 header nav a{
     text-decoration: none;
     color:#aaa;
-    margin-right:10px;
+    margin-right:15px;
 }
 
 header nav a:hover{
@@ -88,4 +91,19 @@ header nav a:hover{
 
 .button i{
     margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.filme-principal .container{
+    width: 60%;
+}
+
+.box-filme{
+    width: 100%;
+    right: 100%;
+    display: block;
+
 }
