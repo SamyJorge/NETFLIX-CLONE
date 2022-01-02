@@ -1,11 +1,11 @@
 /*DECLARANDO VARIAVEIS NO CSS*/
-:root{
-    --vermelho:#e50914;
-    --preto:#141414;
+:root {
+    --vermelho: #e50914;
+    --preto: #000000;
 }
 
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -14,46 +14,43 @@
 /* Elementos de base */
 body {
     background-color: var(--preto);
-    font-family: 'Times New Roman', Times, serif;
-    color:white;
+    font-family: 'arial', Times, serif;
+    color: white;
 }
 
-header .container{
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: space-between;
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header .logo{
-    margin-left: 7px;
-    color: var(--vermelho);
-    font-family: 'arial black', times;
-    font-size: 40px;
+header .logo {
+    margin: 8px 0px 8px 0px;
 }
 
 /*Tratando os links da nav bar*/
-nav{
-    margin-right: 10px;
+nav {
+    margin-left: 10px;
 }
 
-header nav a{
+header nav a {
     text-decoration: none;
-    color:#aaa;
-    margin-right:15px;
+    color: #aaa;
+    margin-right: 15px;
 }
 
-header nav a:hover{
-    color:#fff;
+header nav a:hover {
+    color: rgb(221, 0, 0);
 }
 
 /* Filme principal */
-.filme-principal{
+.filme-principal {
     font-size: 18px;
-    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('/img/capa.jpg');
-    
+    background: linear-gradient(rgba(0, 0, 0, .40), rgba(0, 0, 0, .40)), url('/img/capa.jpg');
+
     height: 400px;
-    background-size:cover;
+    background-size: cover;
 
     display: flex;
     flex-direction: column;
@@ -61,19 +58,19 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-.filme-principal .descricao{
+.filme-principal .descricao {
     margin-top: 10px;
     margin-bottom: 60px;
 }
 
-.title{
+.title {
     margin-top: 15%;
     font-size: 35px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .button {
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(32, 32, 32, 0.5);
     border: none;
     color: white;
     padding: 15px;
@@ -84,12 +81,13 @@ header nav a:hover{
 
     transition: .3s ease all;
 }
-.button:hover{
+
+.button:hover {
     background-color: white;
     color: black;
 }
 
-.button i{
+.button i {
     margin-right: 8px;
 }
 
@@ -97,13 +95,21 @@ header nav a:hover{
     margin-left: 30px;
 }
 
-.filme-principal .container{
-    width: 60%;
+.filme-principal .container {
+    width: 50%;
 }
 
-.box-filme{
+.box-filme {
     width: 100%;
     right: 100%;
     display: block;
+}
 
+.carrousel-filmes {
+    margin-top: 7px;
+}
+
+.classificacao {
+    color: #aaa;
+    margin: 10px 0px 10px 30px;
 }
